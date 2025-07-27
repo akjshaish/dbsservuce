@@ -1,0 +1,36 @@
+
+{
+  "rules": {
+    "users": {
+      ".read": "true",
+      ".write": "true",
+      ".indexOn": "createdAt"
+    },
+    "plans": {
+      ".read": "true",
+      ".write": "true"
+    },
+    "subdomains": {
+      ".read": "true",
+      ".write": "true",
+      ".indexOn": ["userId", "subdomain"]
+    },
+    "tickets": {
+      ".read": "true",
+      ".write": "true"
+    },
+    "settings": {
+      ".read": "true",
+      ".write": "true"
+    },
+    "admins": {
+      ".read": "true",
+      ".write": "true"
+    },
+    "auth_logs": {
+        ".read": "true",
+        ".write": "true",
+        ".indexOn": "ip"
+    }
+  }
+}
